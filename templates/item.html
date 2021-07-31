@@ -1,0 +1,55 @@
+{%load static%}
+<html lang="en">
+
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>ONE TOUCH</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{%static 'layout/styles/layout.css'%}" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <div id="logo" class="fl_left">
+      <!-- ################################################################################################ -->
+      <h1 class="logoname"><a href="/">ONE<span>TOUCH</span></a></h1>
+      <!-- ################################################################################################ -->
+    </div>
+    <nav id="mainav" class="fl_right">
+      <!-- ################################################################################################ -->
+      <ul class="clear">
+         <li class="active"><a href="/">Home</a></li>
+
+        </li>
+      </ul>
+      <!-- ################################################################################################ -->
+    </nav>
+  </header>
+</div>
+
+<body>
+    <!-- Back to top button -->
+  <br><br>
+        <section class="tm-mb-1" id="about">
+            <div class="tm-row tm-about-row">
+                <div class="tm-section-1-l">
+                    <img src="{{prod.img.url}}" alt="About image" class="tm-img-responsive" style=height:500px;width:500px;>
+                    <p>{{prod.name}}</p>
+                    <p>{{prod.desc}}</p>
+                    <p>Price: {{prod.price}} Rs</p>
+                     <p>Stock: {{prod.stock}} </p>
+                </div>
+                <article class="tm-section-1-r tm-bg-color-8">
+                    <h2 class="tm-mb-2 tm-title-color"></h2>
+
+                </article>
+            </div>
+        </section>
+      
+</body>
+</html>
